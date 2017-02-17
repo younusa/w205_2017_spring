@@ -6,7 +6,7 @@ MY_DIR=$(pwd)
 #creating staging directories
 mkdir ~/staging
 mkdir ~/staging/exercise_1
-cd ~staging/exercise_1
+cd ~/staging/exercise_1
 
 #get file  and unzip from data.medicare.gov
 
