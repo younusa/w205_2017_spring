@@ -1,0 +1,16 @@
+DROP TABLE survey_results;
+
+Create Table survey_results as
+SELECT	
+Provider_ID,
+Overall_Rating_of_Hospital_Floor,
+Overall_Rating_of_Hospital_Achievement_Threshold,
+Overall_Rating_of_Hospital_Benchmark,
+Overall_Rating_of_Hospital_Baseline_Rate,
+Overall_Rating_of_Hospital_Performance_Rate,
+Overall_Rating_of_Hospital_Achievement_Points,
+Overall_Rating_of_Hospital_Improvement_Points,
+Overall_Rating_of_Hospital_Dimension_Score,
+HCAHPS_Base_Score,
+HCAHPS_Consistency_Score
+FROM surveys_responses;
