@@ -6,7 +6,7 @@ Provider_ID,
 State,
 Measure_ID,
 Measure_Name,
-Score
+Score,
 Compare_to_National
 FROM readmissions;
 

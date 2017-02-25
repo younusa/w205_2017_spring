@@ -9,7 +9,7 @@ City,
 State,
 ZIP_Code,
 County_Name,
-Phone_Number
+Phone_Number,
 Hospital_Overall_Rating
 FROM hospitals;
 
