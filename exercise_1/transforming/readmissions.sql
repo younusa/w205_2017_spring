@@ -9,3 +9,8 @@ Measure_Name,
 Score
 Compare_to_National
 FROM readmissions;
+
+ALTER TABLE my_hospitals
+CHANGE Hospital_Overall_Rating Hospital_Overall_Rating int
+CHANGE provider_id provider_id int
+;

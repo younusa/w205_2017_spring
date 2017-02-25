@@ -12,3 +12,8 @@ County_Name,
 Phone_Number
 Hospital_Overall_Rating
 FROM hospitals;
+
+ALTER TABLE my_hospitals
+CHANGE Hospital_Overall_Rating Hospital_Overall_Rating int
+CHANGE provider_id provider_id int
+;
