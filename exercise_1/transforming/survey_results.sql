@@ -2,7 +2,7 @@ DROP TABLE survey_results;
 
 Create Table survey_results as
 SELECT	
-Provider_ID,
+Provider_Number,
 Overall_Rating_of_Hospital_Floor,
 Overall_Rating_of_Hospital_Achievement_Threshold,
 Overall_Rating_of_Hospital_Benchmark,
@@ -16,7 +16,7 @@ HCAHPS_Consistency_Score
 FROM surveys_responses;
 
 ALTER TABLE survey_results CHANGE Overall_Rating_of_Hospital_Floor Overall_Rating_of_Hospital_Floor int;
-ALTER TABLE survey_results CHANGE provider_id provider_id int;
+ALTER TABLE survey_results CHANGE Provider_Number provider_id int;
 ALTER TABLE survey_results CHANGE Overall_Rating_of_Hospital_Achievement_Threshold Overall_Rating_of_Hospital_Achievement_Threshold int;
 ALTER TABLE survey_results CHANGE Overall_Rating_of_Hospital_Benchmark Overall_Rating_of_Hospital_Benchmark int;
 ALTER TABLE survey_results CHANGE Overall_Rating_of_Hospital_Baseline_Rate Overall_Rating_of_Hospital_Baseline_Rate int;
