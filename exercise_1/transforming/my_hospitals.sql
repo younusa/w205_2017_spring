@@ -9,9 +9,7 @@ City,
 State,
 ZIP_Code,
 County_Name,
-Phone_Number,
-Hospital_Overall_Rating
+Phone_Number
 FROM hospitals;
 
-ALTER TABLE my_hospitals CHANGE Hospital_Overall_Rating Hospital_Overall_Rating int;
 ALTER TABLE my_hospitals CHANGE provider_id provider_id int;
