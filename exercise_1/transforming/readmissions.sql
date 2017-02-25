@@ -10,6 +10,6 @@ Score
 Compare_to_National
 FROM readmissions;
 
-ALTER TABLE my_hospitals
+ALTER TABLE readmissionsrate
 CHANGE Score Score int
 ;
