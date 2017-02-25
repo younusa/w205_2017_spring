@@ -3,16 +3,16 @@ DROP TABLE survey_results;
 Create Table survey_results as
 SELECT	
 Provider_Number,
-Communication_with_Nurses_Dimension_Score string,
-Communication_with_Doctors_Dimension_Score string,
-Responsiveness_of_Hospital_Staff_Dimension_Score string,
-Pain_Management_Dimension_Score string,
-Communication_about_Medicines_Dimension_Score string,
-Cleanliness_and_Quietness_of_Hospital_Environment_Dimension_Score string,
-Discharge_Information_Dimension_Score string,
-Overall_Rating_of_Hospital_Dimension_Score string,
-HCAHPS_Base_Score string,
-HCAHPS_Consistency_Score string
+Communication_with_Nurses_Dimension_Score ,
+Communication_with_Doctors_Dimension_Score ,
+Responsiveness_of_Hospital_Staff_Dimension_Score ,
+Pain_Management_Dimension_Score ,
+Communication_about_Medicines_Dimension_Score ,
+Cleanliness_and_Quietness_of_Hospital_Environment_Dimension_Score ,
+Discharge_Information_Dimension_Score ,
+Overall_Rating_of_Hospital_Dimension_Score ,
+HCAHPS_Base_Score ,
+HCAHPS_Consistency_Score 
 FROM surveys_responses;
 
 ALTER TABLE survey_results CHANGE Provider_Number provider_id int;
