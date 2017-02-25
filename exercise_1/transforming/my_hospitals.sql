@@ -10,4 +10,5 @@ State,
 ZIP_Code,
 County_Name,
 Phone_Number
+Hospital_Overall_Rating
 FROM hospitals;
