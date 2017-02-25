@@ -7,7 +7,7 @@ State,
 Measure_ID,
 Measure_Name,
 Score,
-Compare_to_National
+Compared_to_National
 FROM readmissions;
 
 ALTER TABLE readmissionsrate
