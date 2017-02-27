@@ -28,3 +28,4 @@ GROUP BY my_hospitals.provider_id,my_hospitals.hospital_name, my_hospitals.state
 ORDER BY TPS_Score DESC;
 
 select * from best_hospitals limit 10;
+

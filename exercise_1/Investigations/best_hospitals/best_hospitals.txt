@@ -9,7 +9,15 @@ I had instead scaled up the clinical care domain and the HCAHPS Score such that 
 and the HCAHPS patient experience score accounted for 25% of the total TPS score. Also, I had used six measures 
 to define clinical care, three from the timely and effective procedures table, (IMM-2 (Preventive Care), PC-01 (Pregnancy and Delivery Care) and OP-20 (Door to diagnostic eval),
 and three from the readmissions table, MORT_30_AMI (30-day Acute Myocardial infarction mortality rate), Heart failure (HF) 30-Day Mortality Rate,
-and Pneumonia (PN) 30-Day Mortality Rate. The following table displays the hospital in descending order of TPS Score. 
+and Pneumonia (PN) 30-Day Mortality Rate. 
+
+The HCAHPS Patient Experience of Care score consists of the sum of the HCAHPS Base score, which is the sum of all 8 HCAHPS dimensions,
+and the HCAHPS consistency score, which is a measure of a hospital's ability to retain a high score between a baseline period and
+the performance period. Therefore, the total Patient Experience of Care Score along with the aforementioned measures used for procedural care,
+is a good measure of high quality care from each hospital.
+
+The following table displays the hospital in descending order of TPS Score. 
+
 
 hospital_id  Hospital_name                                          State    TPS_Score
 110165       SOUTHERN REGIONAL MEDICAL CENTER                        GA      219.65
@@ -25,5 +33,5 @@ hospital_id  Hospital_name                                          State    TPS
 Time taken: 0.47 seconds, Fetched 10 row(s)
 
 
-The reason this method is justified is because hospitals with the highest TPS Scores will have also shown consistently high scores for the measures that I have
-used to define the TPS Score. 
+The reason this method is justified is because hospitals with the highest TPS Scores will have also captured consistently high scores for the measures that I have
+used to define the TPS Score for each hospital. 

@@ -24,3 +24,5 @@ concat("correlation between meaasure measure ",Measure_ID," and survey score = "
 FROM procedures p FULL JOIN survey_results s
 ON p.provider_id= s.provider_id
 group by p.Measure_ID;
+
+

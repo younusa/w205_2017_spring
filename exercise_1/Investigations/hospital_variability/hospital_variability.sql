@@ -36,6 +36,10 @@ AverageScore,
 ScoreRange
 from procedures_variability
 order by Adjusted_Variance DESC
+;
+
+select * from Adjusted_Variation
+order by Adjusted_Variance DESC
 limit 10;
 
 
