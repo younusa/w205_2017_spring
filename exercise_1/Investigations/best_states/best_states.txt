@@ -1,0 +1,17 @@
+To determine the answer to this question, I had taken the best hospitals table that was created using the best_hospitals.sql, and 
+averaged the TPS_score over the state. Whichever state had yielded the highest average for TPS score was the model for state that had highest care.
+The table below in descending order displays in descending order the states that showed the highest quality of care, using the average tps score as the measure. 
+
+State   Average TPS Score  Rank
+DC           155.554         1
+RI           146.103         2    
+NC           140.481         3     
+SC           139.064         4    
+NH           137.538         5      
+MA           137.477         6       
+DE           137.175         7    
+ME           137.115         8     
+GA           135.888         9      
+VT           135.817         10    
+
+

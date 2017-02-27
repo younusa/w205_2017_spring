@@ -1,0 +1,29 @@
+To answer this question, I had used a modified definition total performance score (TPS) as a measure of consistent high-quality care on different measures.
+I had then ranked in descending order the hospitals which demonstrated high-quality care using this metric. 
+The definition of TPS Score is described in the link below.
+
+https://www.medicare.gov/hospitalcompare/data/total-performance-scores.html
+
+Because the task prompt did not include a Safety Domain or a Efficieny and Cost Domain, as is required in the definition of TPS in the aforementioned link,
+I had instead scaled up the clinical care domain and the HCAHPS Score such that the clinical care Domain accounted for  75% 
+and the HCAHPS patient experience score accounted for 25% of the total TPS score. Also, I had used six measures 
+to define clinical care, three from the timely and effective procedures table, (IMM-2 (Preventive Care), PC-01 (Pregnancy and Delivery Care) and OP-20 (Door to diagnostic eval),
+and three from the readmissions table, MORT_30_AMI (30-day Acute Myocardial infarction mortality rate), Heart failure (HF) 30-Day Mortality Rate,
+and Pneumonia (PN) 30-Day Mortality Rate. The following table displays the hospital in descending order of TPS Score. 
+
+hospital_id  Hospital_name                                          State    TPS_Score
+110165       SOUTHERN REGIONAL MEDICAL CENTER                        GA      219.65
+110191       PIEDMONT HENRY HOSPITAL                                 GA      216.425
+260032       BARNES JEWISH HOSPITAL                                  MO      202.475
+450236       CHRISTUS MOTHER FRANCES HOSPITAL SULPHUR SPRINGS        TX      198.175
+90003        HOWARD UNIVERSITY HOSPITAL                              DC      198.15
+90011        MEDSTAR WASHINGTON HOSPITAL CENTER                      DC      193.075
+50026        GROSSMONT HOSPITAL                                      CA      188.775
+330396       WOODHULL MEDICAL AND MENTAL HEALTH CENTER               NY      186.925
+330202       KINGS COUNTY HOSPITAL CENTER                            NY      185.55
+50393        PIH HOSPITAL - DOWNEY                                   CA      184.85
+Time taken: 0.47 seconds, Fetched 10 row(s)
+
+
+The reason this method is justified is because hospitals with the highest TPS Scores will have also shown consistently high scores for the measures that I have
+used to define the TPS Score. 

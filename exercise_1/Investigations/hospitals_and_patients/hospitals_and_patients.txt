@@ -1,0 +1,43 @@
+-Correlation between average scores for each procedure and patient survey responses  
+In order to answer this question, I used the corr() function. In order to use the corr() function, I calculated the average score for all procedures for each 
+hospital in the timely and effective care data and attempted to correlate that with the HCAHPS Patient experience of care score for each hospital. 
+
+correlation between average hospital procedural score and survey score-0.312
+
+There is a negative correlation between average procedural score for each hospital and patient survey responses, which suggests that
+hospitals that had a low average score for procedural score seemed to be favorable for patients and vice versa. 
+
+
+-Correlation between procedural score for each procedure in timely and effective care and patient survey responses.
+In order to answer this question, I used the corr() function. In order to use the corr() function, I tested for correlation for the score for each procedure
+for each hospital to the patient care score for that hospital. If there truly was a correlation between the two values, they would vary together and we would see a 
+positive correlation between a procedural score and the patient_care_score.
+
+correlation between meaasure measure ED_1b and survey score = -0.404
+correlation between meaasure measure ED_2b and survey score = -0.377
+correlation between meaasure measure IMM_2 and survey score = 0.037
+correlation between meaasure measure IMM_3_OP_27_FAC_ADHPCT and survey score = 0.114
+correlation between meaasure measure OP_1 and survey score = 0.105
+correlation between meaasure measure OP_18b and survey score = -0.313
+correlation between meaasure measure OP_2 and survey score = 0.008
+correlation between meaasure measure OP_20 and survey score = -0.175
+correlation between meaasure measure OP_21 and survey score = -0.204
+correlation between meaasure measure OP_22 and survey score = -0.166
+correlation between meaasure measure OP_23 and survey score = -0.012
+correlation between meaasure measure OP_29 and survey score = 0.027
+correlation between meaasure measure OP_30 and survey score = 0.072
+correlation between meaasure measure OP_31 and survey score = 0.123
+correlation between meaasure measure OP_3b and survey score = -0.192
+correlation between meaasure measure OP_4 and survey score = 0.026
+correlation between meaasure measure OP_5 and survey score = -0.143
+correlation between meaasure measure PC_01 and survey score = -0.017
+correlation between meaasure measure STK_4 and survey score = 0.013
+correlation between meaasure measure VTE_5 and survey score = 0.067
+correlation between meaasure measure VTE_6 and survey score = -0.059
+
+
+The output for the correlation command reveals that there is no strong correlation between any of the procedural scores and the patient care score. 
+The strongest negative correlation was seen between ED_1b ("Median Time from ED Arrival to ED Departure for Admitted ED Patients") 
+and ED_2b ("Admit Decision Time to ED Departure Time for Admitted Patients"), which strangely suggests that the greater the time each patient stayed in the ED,
+the better the better patient score. 
+

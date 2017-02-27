@@ -2,7 +2,7 @@ DROP TABLE my_hospitals;
 
 Create Table my_hospitals as
 SELECT	
-Provider_ID,
+cast (Provider_ID as int) as Provider_ID,
 Hospital_Name,
 Address,
 City,
@@ -12,4 +12,4 @@ County_Name,
 Phone_Number
 FROM hospitals;
 
-ALTER TABLE my_hospitals CHANGE provider_id provider_id int;
+

@@ -2,14 +2,12 @@ DROP TABLE procedures;
 
 Create Table procedures as
 SELECT	
-Provider_ID,
+cast (Provider_ID as int) as provider_id,
 Condition,
 Measure_ID,
 Measure_Name,
-Score
-FROM effective_care;
+cast (Score as int) as score
+FROM effective_care
+WHERE Score not like "Not%";
 
-ALTER TABLE procedures
-CHANGE Score Score int
-;
 

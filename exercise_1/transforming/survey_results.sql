@@ -2,19 +2,12 @@ DROP TABLE survey_results;
 
 Create Table survey_results as
 SELECT	
-Provider_Number,
-Communication_with_Nurses_Dimension_Score ,
-Communication_with_Doctors_Dimension_Score ,
-Responsiveness_of_Hospital_Staff_Dimension_Score ,
-Pain_Management_Dimension_Score ,
-Communication_about_Medicines_Dimension_Score ,
-Cleanliness_and_Quietness_of_Hospital_Environment_Dimension_Score ,
-Discharge_Information_Dimension_Score ,
-Overall_Rating_of_Hospital_Dimension_Score ,
-HCAHPS_Base_Score ,
-HCAHPS_Consistency_Score 
+cast (Provider_Number as int) as provider_id,
+cast (HCAHPS_Base_Score as int) ,
+cast (HCAHPS_Consistency_Score as int),
+cast((HCAHPS_Base_Score+ HCAHPS_Consistency_Score) as int) as Patient_Care_Score 
 FROM surveys_responses;
 
-ALTER TABLE survey_results CHANGE Provider_Number provider_id int;
-ALTER TABLE survey_results CHANGE HCAHPS_Base_Score HCAHPS_Base_Score int;
-ALTER TABLE survey_results CHANGE HCAHPS_Consistency_Score HCAHPS_Consistency_Score int;
+
+
+
