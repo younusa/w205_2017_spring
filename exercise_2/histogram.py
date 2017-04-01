@@ -18,7 +18,7 @@ rows=cur.fetchall()
 if len(sys.argv)==3:
         for r in rows:
                 if int(r[1])>=int(sys.argv[1]) and int(r[1])<=int(sys.argv[2]):
-                        print(r)
+                        print(r[0]," : ",r[1])
 else:
         print("You have to enter only two numbers")
 
