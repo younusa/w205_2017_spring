@@ -13,7 +13,7 @@ cur=conn.cursor()
 
 cur.execute("select * from tweetwordcount")
 rows=cur.fetchall()
-
+rows=sorted(rows)
 
 x=0
 if len(sys.argv)==2:
