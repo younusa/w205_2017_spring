@@ -19,12 +19,12 @@ x=0
 if len(sys.argv)==2:
 	for r in rows:
 		if r[0]==sys.argv[1]:
-			print(r)
+			print("Total number of recurrences of",r[0],":",r[1])
 			x=1
 		
 else:
 	for r in rows:
-		print(r)
+		print(r[0],":",r[1])
 if len(sys.argv)==2:
 	if x==0:
 		print("This word is not in list")
