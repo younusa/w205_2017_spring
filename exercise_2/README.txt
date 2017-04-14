@@ -42,6 +42,7 @@ Step 6. Wait for program to execute for around 15-20 minutes and hit ctrl-c to t
 Step 7. Analyze data output in postgres table by changing directory to parent folder (exercise_2)
 and use .py scripts to determine word counts of a particular word or of all words
 
+
 example:
 $ "python finalresults.py"
 $ "python finalresults.py president"
